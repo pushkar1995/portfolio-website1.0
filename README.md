@@ -60,8 +60,8 @@ Example commands:
 
 ```sh
   
-  git clone git@github.com:pushkar1995/portfolio-website.git
-  cd portfolio-website
+  git clone https://github.com/pushkar1995/portfolio-website1.0.git
+  cd portfolio-website1.0
 
 ```
 ### Install
