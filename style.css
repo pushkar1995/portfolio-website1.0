@@ -112,16 +112,10 @@ li {
 
 .top-card-container {
   margin-top: 10px;
-  justify-items: centre;
   display: grid;
   grid-template-columns: 100%;
-  width: 100%;
   grid-template-rows: 250px repeat(3, auto);
   min-height: 90px;
-}
-
-.topcard-body {
-  margin-top: 40px;
 }
 
 .myRecentWorksHeading {
@@ -234,7 +228,6 @@ li {
   justify-items: center;
   grid-template-rows: repeat(6, 370px);
   grid-template-columns: 100px;
-  width: 100px;
   margin-left: 138px;
 }
 
@@ -247,7 +240,6 @@ li {
   height: 372px;
   width: 327px;
   gap: 10px;
-  margin-left: 5px;
 }
 
 .general-card-two {
@@ -255,11 +247,10 @@ li {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  margin-top: 68px;
+  margin-top: 88px;
   height: 372px;
   width: 327px;
   gap: 10px;
-  margin-left: 5px;
 }
 
 .general-card-three {
@@ -270,7 +261,6 @@ li {
   margin-top: 113px;
   height: 372px;
   width: 327px;
-  margin-left: 5px;
   gap: 10px;
 }
 
@@ -282,7 +272,6 @@ li {
   margin-top: 157px;
   height: 372px;
   width: 327px;
-  margin-left: 5px;
   gap: 10px;
 }
 
@@ -294,7 +283,6 @@ li {
   margin-top: 202px;
   height: 372px;
   width: 327px;
-  margin-left: 5px;
   gap: 10px;
 }
 
@@ -306,7 +294,6 @@ li {
   margin-top: 247px;
   height: 372px;
   width: 327px;
-  margin-left: 5px;
   gap: 10px;
 }
 
@@ -383,13 +370,12 @@ li {
 
 .aboutme-container {
   display: flex;
-  width: 382px;
   height: 100%;
   background-color: #1c1a19;
   flex-direction: column;
   padding-top: 120px;
   position: relative;
-  margin-top: 150px;
+  margin-top: 375px;
   background-repeat: no-repeat;
   margin-left: -2px;
 }
