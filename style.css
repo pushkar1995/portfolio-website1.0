@@ -109,7 +109,7 @@ li {
 }
 
 /* 2nd Part Portfolio Section CSS */
-  
+
 .top-card-container {
   margin-top: 10px;
   justify-items: centre;
@@ -405,7 +405,6 @@ li {
   margin-left: 24px;
   font-weight: 400;
   font-size: 72px;
-  line-height: 88px;
 }
 
 .aboutme-textsection {
@@ -493,4 +492,3 @@ li {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
