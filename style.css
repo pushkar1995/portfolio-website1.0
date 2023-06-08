@@ -169,7 +169,7 @@ li {
 }
 
 .page-information {
-  font-family: 'poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -201,7 +201,7 @@ li {
   margin-top: 20px;
 }
 
-.top-container-button {
+.topcontainer-seeproject-button {
   background-color: #ff6b00;
   border: none;
   color: #fff;
@@ -217,10 +217,14 @@ li {
   margin-left: 25px;
 }
 
-.top-container-button:hover {
-  border: #f55800;
+.topcontainer-seeproject-button:hover {
+  border: 0.01rem solid #f55800;
   color: #f55800;
   background-color: #fff5e1;
+}
+
+.topcontainer-seeproject-button:active {
+  background-color: #e05304;
 }
 
 .general-card-container {
@@ -313,7 +317,7 @@ li {
 }
 
 .text-segment {
-  font-family: 'poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -363,9 +367,13 @@ li {
 }
 
 .general-card-button:hover {
-  background-color: #fff5e1;
+  border: 0.01rem solid #f55800;
   color: #f55800;
-  border: #f55800;
+  background-color: #fff5e1;
+}
+
+.general-card-button:active {
+  background-color: #e05304;
 }
 
 .aboutme-container {
@@ -427,9 +435,13 @@ li {
 }
 
 .resume-button:hover {
-  background-color: #fff5e1;
-  border: #f55800;
+  border: 0.01rem solid #f55800;
   color: #f55800;
+  background-color: #fff5e1;
+}
+
+.resume-button:active {
+  background-color: #e05304;
 }
 
 .secondBackgroundImage {
