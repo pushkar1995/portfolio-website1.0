@@ -183,6 +183,7 @@ li {
 
 .tech-icons {
   display: flex;
+  float: left;
   gap: 2px;
   list-style: none;
   margin-left: 17px;
@@ -489,4 +490,145 @@ li {
   line-height: 43px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+/* Contact Form Styles */
+
+.contactform-maincontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactform-headercontainer {
+  margin-top: 69px;
+  margin-left: 23px;
+  margin-right: 25px;
+}
+
+.contactform-headertext {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: #172b4d;
+  line-height: 2.7rem;
+}
+
+.contactform-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem
+}
+
+.fullname-field {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-left: 3%;
+  border: none;
+}
+
+.namefield-bottomline {
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+  width: 324px;
+  border: 0.01rem solid #dbd8d7;
+}
+
+.email-field {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 24px;
+  padding-left: 3%;
+  border: none;
+}
+
+.emailfield-bottomline {
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+  width: 324px;
+  border: 0.01rem solid #dbd8d7;
+}
+
+.writeme-something-field {
+  width: 327px;
+  height: 38px;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-top: 6%;
+  padding-left: 3%;
+  padding-bottom: 40%;
+  background: #fbf8F7;
+  color: #3c3a39;
+  border: none;
+}
+
+.getintouch-button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b00;
+  color: #fff;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+}
+
+.getintouch-button:hover {
+  border: 0.01rem solid #f55800;
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+.getintouch-button:active {
+  background-color: #e05304;
+}
+
+.footer-dividerline {
+  margin-top: 5rem;
+  width: 100%;
+  border: 0.01rem solid #dfe1e6;
+}
+
+.buttom-icon-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 0.9rem;
+}
+
+.buttom-icon-wrap img {
+  background-color: #505f79;
+}
+
+.footer-bottomshape {
+  width: 8.3rem;
+  height: 0.3rem;
+  margin-bottom: 0.6rem;
+  margin-left: 7.8rem;
+  margin-right: 7.6rem;
+  background-color: #0d151e;
+  border: 0.01rem solid;
+  border-radius: 1.5rem;
 }
