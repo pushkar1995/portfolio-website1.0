@@ -522,7 +522,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem
+  gap: 1.5rem;
 }
 
 .fullname-field {
@@ -565,14 +565,14 @@ li {
 .writeme-something-field {
   width: 327px;
   height: 38px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 0.9rem;
   padding-top: 6%;
   padding-left: 3%;
   padding-bottom: 40%;
-  background: #fbf8F7;
+  background: #fbf8f7;
   color: #3c3a39;
   border: none;
 }
