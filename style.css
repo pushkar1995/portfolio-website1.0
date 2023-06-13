@@ -116,6 +116,7 @@ ul {
   grid-template-columns: 100%;
   grid-template-rows: 250px repeat(3, auto);
   min-height: 90px;
+  width: 100%;
 }
 
 .myRecentWorksHeading {
@@ -183,10 +184,11 @@ ul {
 
 .tech-icons {
   display: flex;
-  float: left;
-  gap: 2px;
+  justify-content: flex-start;
+  gap: 0.8rem;
   list-style: none;
-  margin-left: 17px;
+  margin: 0.7rem;
+  margin-left: 27px;
 }
 
 .stackButton {
@@ -197,7 +199,7 @@ ul {
   display: inline-block;
   background-color: #fff;
   color: #091e42;
-  border: 2px solid #8993a4;
+  border: 1px solid #8993a4;
   padding: 10px 10px;
   margin-top: 20px;
 }
@@ -252,7 +254,7 @@ ul {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  margin-top: 88px;
+  margin-top: 40px;
   height: 372px;
   width: 327px;
   gap: 10px;
@@ -263,7 +265,7 @@ ul {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  margin-top: 113px;
+  margin-top: 50px;
   height: 372px;
   width: 327px;
   gap: 10px;
@@ -274,7 +276,7 @@ ul {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  margin-top: 157px;
+  margin-top: 60px;
   height: 372px;
   width: 327px;
   gap: 10px;
@@ -285,7 +287,7 @@ ul {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  margin-top: 202px;
+  margin-top: 70px;
   height: 372px;
   width: 327px;
   gap: 10px;
@@ -296,7 +298,7 @@ ul {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  margin-top: 247px;
+  margin-top: 80px;
   height: 372px;
   width: 327px;
   gap: 10px;
@@ -332,7 +334,7 @@ ul {
 
 .builtWith {
   margin-top: 0;
-  padding-left: 7px;
+  padding-left: 13px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -361,7 +363,7 @@ ul {
   font-weight: 700;
   cursor: pointer;
   text-align: center;
-  padding: 12px;
+  padding: 16px;
   color: #fff;
   border: none;
   background-color: #ff6b00;
@@ -384,7 +386,7 @@ ul {
   flex-direction: column;
   padding-top: 120px;
   position: relative;
-  margin-top: 375px;
+  margin-top: 275px;
   background-repeat: no-repeat;
   margin-left: -2px;
 }
