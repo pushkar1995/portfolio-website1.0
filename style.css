@@ -617,14 +617,3 @@ li {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-
-.footer-bottomshape {
-  width: 8.3rem;
-  height: 0.3rem;
-  margin-bottom: 0.8rem;
-  margin-left: 7.4rem;
-  margin-right: 7.6rem;
-  background-color: #0d151e;
-  border: 0.01rem solid;
-  border-radius: 1.5rem;
-}
