@@ -104,7 +104,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+.icon {
   margin: 0.5rem;
 }
 
@@ -614,8 +614,8 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
+  gap: 1rem;
 }
 
 .footer-bottom {
