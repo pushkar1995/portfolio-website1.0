@@ -792,14 +792,17 @@ ul {
   /* Top Card Container Section */
 
   .topcard-section {
-    margin-left: 100px;
+    width: 100%;
+    margin-left: 125px;
     margin-right: 102px;
+    margin-bottom: 100px;
   }
 
   .top-card-container {
     display: flex;
     flex-direction: column;
     width: 100%;
+
   }
 
   .topcard-header-container {
@@ -896,8 +899,7 @@ ul {
     max-width: 1440px;
     height: 554px;
     justify-content: center;
-    margin-top: 28px;
-    margin-left: -25px;
+    margin: 28px 100px 0 -130px;
   }
 
   .general-card-one-d {
@@ -1164,6 +1166,14 @@ ul {
 
   .main-techstacks-wrap > :nth-child() {
     margin-top: -3px;
+  }
+
+  .techstacks-subwrap-2 {
+    margin-left: 70px;
+  }
+
+  .techstacks-subwrap-3 {
+    margin-left: 110px;
   }
 
   /* Form Section */
