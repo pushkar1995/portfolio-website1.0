@@ -748,6 +748,7 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
     gap: 24px;
+    margin-bottom: -20px;
   }
 
   .heading-text {
@@ -802,28 +803,27 @@ ul {
     display: flex;
     flex-direction: column;
     width: 100%;
-
   }
 
   .topcard-header-container {
     display: flex;
-    align-items: center;
-    margin: 0 9.563rem;
+    margin-left: 30.5px;
+    margin-bottom: 50px;
   }
 
   .myRecentWorksHeading {
     font-family: "Crete Round", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 40px;
-    line-height: 52px;
-    margin-right: 0.5rem;
+    margin-left: -30px;
+    width: 314px;
   }
 
   .section-break-firstline {
-    flex-grow: 1;
-    /* border: 1px solid #212121; */
-    border-top: 1px solid #212121;
+    height: 0;
+    margin-top: 150px;
+    width: 680px;
+    margin-left: 310px;
+    border: 1px solid #212121;
   }
 
   .topcard-body {
