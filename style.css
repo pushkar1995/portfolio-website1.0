@@ -804,22 +804,23 @@ ul {
 
   .topcard-header-container {
     display: flex;
-  }
-  
-  .recentworks-container {
-    /* margin-bottom: 200px; */
+    align-items: center;
+    margin: 0 9.563rem;
   }
 
   .myRecentWorksHeading {
     font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 40px;
+    line-height: 52px;
+    margin-right: 0.5rem;
   }
 
   .section-break-firstline {
-    display: inline;
-    height: 0;
-    width: 498px;
-    border: 1px solid #212121;
+    flex-grow: 1;
+    /* border: 1px solid #212121; */
+    border-top: 1px solid #212121;
   }
 
   .topcard-body {
