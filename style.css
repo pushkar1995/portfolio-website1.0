@@ -35,11 +35,15 @@
     display: none;
   }
 
-  .firstNameInputField {
+  .secondBackgroundImage-d {
     display: none;
   }
 
-  .lastNameInputField {
+  .firstNameFieldWrapper {
+    display: none;
+  }
+
+  .lastNameFieldWrapper {
     display: none;
   }
 }
@@ -549,9 +553,7 @@ ul {
 }
 
 .contactform-headercontainer {
-  margin-top: 69px;
-  margin-left: 23px;
-  margin-right: 25px;
+  margin: 69px 25px 55px 23px;
 }
 
 .contactform-headertext {
@@ -592,6 +594,11 @@ ul {
   border: 0.01rem solid #dbd8d7;
 }
 
+.emailInputField {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
 .email-field {
   width: 327px;
   height: 48px;
@@ -624,7 +631,6 @@ ul {
   background: #fbf8f7;
   color: #3c3a39;
   border: none;
-  margin-top: 10px;
 }
 
 .getintouch-button {
@@ -641,7 +647,7 @@ ul {
   width: 8rem;
   height: 3rem;
   border: none;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .getintouch-button:hover {
@@ -682,35 +688,23 @@ ul {
 /* Media Queries for Desktop Version */
 
 @media (min-width: 768px) {
-  #navbarElement {
-    display: flex;
-    justify-content: end;
-    margin-right: 190px;
-    align-items: baseline;
-    flex: 1;
-  }
-
   .logo-container {
     width: 70px;
     height: 16px;
     line-height: 24px;
-    margin-left: 162px;
-    margin-right: 24px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-left: 100px;
+    margin-bottom: 25px;
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 72px;
     padding: 0;
@@ -721,46 +715,51 @@ ul {
     display: none;
   }
 
+  #navbarElement {
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    margin-top: 25px;
+  }
+
   .navbarItem {
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     color: #fff;
     text-decoration: none;
     margin-right: 32px;
     text-align: center;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
     width: 60px;
     height: 18px;
   }
 
   .navbarMailIcon {
     align-items: center;
-    margin-top: 12px;
-    margin-bottom: -14px;
+    margin-top: -4px;
   }
 
-  .headline-container {
+  .headline-container-d {
     width: 100%;
-    height: 798px;
-
-    /* background-image: url(images/desk-img1.png); */
-
-    /* background-position: right;
+    height: 550px;
+    background-image: url('/images/desktop-img/header-background-d.png');
+    background-position: right;
     background-size: contain;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    gap: 24px;
   }
 
   .heading-text {
     width: 566px;
     order: 1;
     margin-left: 143px;
-    margin-top: 143px;
+    margin-top: -30px;
   }
 
   .subheader {
     width: 566px;
     margin-left: 143px;
-    margin-top: 24px;
     order: 2;
     font-weight: 500;
     font-size: 32px;
@@ -772,7 +771,6 @@ ul {
     width: 566px;
     height: 123px;
     margin-left: 143px;
-    margin-top: 24px;
     order: 3;
   }
 
@@ -781,44 +779,51 @@ ul {
     flex-direction: column;
     position: absolute;
     width: 20px;
-    height: 20px;
+    height: 10px;
     left: 0.5%;
     right: 96.11%;
     top: 25.37%;
     bottom: 89.19%;
     order: 2;
-    margin-top: 140px;
-    margin-left: 36px;
-    margin-right: 90px;
+    margin-top: 40px;
+    margin-left: 16px;
   }
 
   /* Top Card Container Section */
 
+  .topcard-section {
+    margin-left: 100px;
+    margin-right: 102px;
+  }
+
   .top-card-container {
-    margin-top: 755px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-left: -420px;
   }
 
   .topcard-header-container {
     display: flex;
-    margin-left: 30.5px;
-    margin-top: 58px;
+  }
+  
+  .recentworks-container {
+    /* margin-bottom: 200px; */
   }
 
   .myRecentWorksHeading {
     font-family: "Crete Round", sans-serif;
     font-size: 40px;
-    margin-right: -64px;
-    width: 314px;
   }
 
   .section-break-firstline {
+    display: inline;
     height: 0;
-    margin-top: 242px;
-    width: 698px;
-    margin-left: 366px;
+    width: 498px;
     border: 1px solid #212121;
+  }
+
+  .topcard-body {
+    display: flex;
   }
 
   .portfolioImageMobile {
@@ -828,17 +833,16 @@ ul {
   .portfolioImageDesktop {
     display: flex;
     margin-top: 55px;
-    margin-left: 528px;
     margin-right: -78px;
     height: 436px;
-    width: 640px;
+    width: 540px;
   }
 
   .right-section {
-    width: 203px;
+    width: 435px;
     height: 426px;
-    margin-left: 1105px;
-    margin-top: -425px;
+    margin-left: 20px;
+    margin-top: 52px;
   }
 
   .multiPostStories {
@@ -854,7 +858,7 @@ ul {
   .page-information {
     display: flex;
     margin-top: 40px;
-    margin-left: 82px;
+    margin-left: 80px;
     margin-right: 0;
     height: 89px;
     width: 448px;
@@ -863,8 +867,8 @@ ul {
 
   .tech-icons {
     display: flex;
-    margin-top: 48px;
-    margin-left: 82px;
+    margin-top: 38px;
+    margin-left: 80px;
     margin-right: 0;
     height: 0;
     width: 0;
@@ -873,7 +877,7 @@ ul {
 
   .topcontainer-seeproject-button {
     display: flex;
-    margin-top: 77px;
+    margin-top: 87px;
     margin-left: 80px;
     margin-right: 0;
     height: 55px;
@@ -889,11 +893,10 @@ ul {
     justify-items: center;
     width: 100%;
     max-width: 1440px;
-    gap: 17px -4px;
     height: 554px;
     justify-content: center;
     margin-top: 28px;
-    margin-left: 828px;
+    margin-left: -25px;
   }
 
   .general-card-one-d {
@@ -902,8 +905,6 @@ ul {
     background-repeat: no-repeat;
     display: flex;
     margin-top: -22px;
-    height: 387px;
-    width: 327px;
     margin-left: 5px;
   }
 
@@ -924,7 +925,7 @@ ul {
   }
 
   .general-card-button {
-    margin-top: 365px;
+    margin-top: 357px;
   }
 
   .general-card-two-d {
@@ -942,7 +943,7 @@ ul {
     list-style: none;
     width: 295px;
     height: 81px;
-    margin-top: 138px;
+    margin-top: 100px;
     padding-left: 13px;
     padding-top: 30px;
     line-height: 44px;
@@ -961,7 +962,7 @@ ul {
     width: 300px;
     height: 100px;
     line-height: 24px;
-    margin-top: -9px;
+    margin-top: 25px;
     padding-left: 13px;
   }
 
@@ -985,12 +986,12 @@ ul {
     width: 295px;
     height: 81px;
     margin-top: 143px;
-    padding-left: 13px;
+    padding-left: 10px;
     padding-top: 30px;
     line-height: 44px;
     font-size: 30px;
     font-style: normal;
-    font-family: "create Round", sans-serif;
+    font-family: "Crete Round", sans-serif;
     color: #fff;
   }
 
@@ -1003,7 +1004,7 @@ ul {
     width: 300px;
     height: 100px;
     line-height: 24px;
-    margin-top: -14px;
+    margin-top: -10px;
     padding-left: 13px;
   }
 
@@ -1023,7 +1024,7 @@ ul {
     list-style: none;
     width: 295px;
     height: 81px;
-    margin-top: 143px;
+    margin-top: 90px;
     padding-left: 13px;
     padding-top: 30px;
     line-height: 44px;
@@ -1042,7 +1043,7 @@ ul {
     width: 300px;
     height: 94px;
     line-height: 24px;
-    margin-top: -6px;
+    margin-top: 35px;
     padding-left: 13px;
   }
 
@@ -1066,6 +1067,21 @@ ul {
     margin-left: 5px;
   }
 
+  .printingDataHeading-c6-d {
+    display: flex;
+    list-style: none;
+    width: 295px;
+    height: 81px;
+    margin-top: 130px;
+    padding-left: 10px;
+    padding-top: 30px;
+    line-height: 44px;
+    font-size: 30px;
+    font-style: normal;
+    font-family: "create Round", sans-serif;
+    color: #fff;
+  }
+
   .general-card-button-d {
     display: none;
   }
@@ -1074,12 +1090,12 @@ ul {
 
   .aboutme-container {
     width: 100%;
-    height: 1195px;
+    height: 1050px;
     display: flex;
   }
 
   .aboutme-header {
-    margin-left: 142px;
+    margin-left: 100px;
   }
 
   .aboutme-textsection {
@@ -1092,7 +1108,7 @@ ul {
     line-height: 32px;
     color: #f4f5f7;
     margin-top: 24px;
-    margin-left: 142px;
+    margin-left: 100px;
     display: flex;
     width: 566px;
     height: 148px;
@@ -1101,7 +1117,7 @@ ul {
   }
 
   .resume-button-d {
-    margin-left: 144px;
+    margin-left: 102px;
   }
 
   .secondBackgroundImage {
@@ -1110,7 +1126,7 @@ ul {
 
   .secondBackgroundImage-d {
     position: absolute;
-    bottom: 844px;
+    bottom: 610px;
     right: 0;
     width: 581px;
     height: 350px;
@@ -1121,25 +1137,24 @@ ul {
 
   .aboutme-sectionline {
     width: 85%;
-    top: 640px;
+    top: 540px;
     position: absolute;
     border: 1px solid #fff;
     align-items: center;
-    margin-left: 98px;
+    margin-left: 100px;
     margin-right: 15px;
   }
 
   .myskills-container {
-    margin-left: -60px;
+    margin-left: -25px;
     display: flex;
   }
 
   .main-techstacks-wrap {
-    margin-left: 296px;
     display: grid;
     grid-template-columns: repeat(3, 352px);
     text-align: start;
-    margin-top: -58px;
+    margin-top: -78px;
   }
 
   .main-techstacks-wrap > :nth-child(3) {
@@ -1158,32 +1173,18 @@ ul {
     width: 100%;
     margin-left: 192px;
     margin-top: 15px;
-    padding: -22px;
-    max-width: 1440px;
-    height: 614px;
-  }
-
-  .mainFormContent {
-    flex: none;
-    color: #172b4d;
-    font-weight: 700;
-    text-align: center;
-    font-size: 24px;
-    line-height: 44px;
-    width: 369px;
-    position: absolute;
-    margin: 52px 0 0 0;
-    font-family: "Inter", sans-serif;
-    height: 216px;
-    order: 0;
-    flex-grow: 0;
+    height: 400px;
   }
 
   .contactform-headertext {
     text-align: start;
     width: 373px;
-    margin-left: -40px;
+    margin-left: -120px;
     align-items: center;
+  }
+
+  .contactform-container {
+    display: flex;
   }
 
   .inputs-wrapper {
@@ -1191,9 +1192,7 @@ ul {
     padding: 0;
     list-style: none;
     flex-direction: column;
-    margin-left: 341px;
-    margin-right: -10px;
-    margin-top: -204px;
+    margin-left: -70px;
   }
 
   .namefield-bottomline {
@@ -1202,53 +1201,53 @@ ul {
     border: 1px solid #dbd8d7;
   }
 
-  .emailfield-bottomline {
-    margin: -3px -17px 0;
-    width: 670px;
-    border: 1px solid #dbd8d7;
-  }
-
   .inputFullName {
     display: none;
   }
 
-  .firstNameInputField {
+  .firstNameFieldWrapper {
     font-weight: 400;
     position: absolute;
     display: flex;
     flex-direction: column;
     flex: 1 auto;
-    padding-right: 100px;
-    border: none;
-    font-family: "Inter", sans-serif;
     margin-left: 69px;
     margin-right: -42px;
   }
 
-  .lastNameInputField {
-    font-weight: 400;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex: 1 auto;
-    padding-right: 100px;
+  .firstNameInputField {
     border: none;
-    font-family: "Inter", sans-serif;
-    margin-left: 425px;
-    margin-right: -42px;
+    width: 300px;
+    height: 48px;
+    font-size: 0.9rem;
+    padding-left: 3%;
   }
 
-  .input #Name {
+  .lastNameFieldWrapper {
+    margin-left: 425px;
+    margin-right: -15px;
+  }
+
+  .lastNameInputField {
     border: none;
+    width: 300px;
+    height: 48px;
+    font-size: 0.9rem;
+    padding-left: 3%;
   }
 
   .emailInputField {
-    margin: 16px 150px 29px 68px;
+    margin: 26px 150px 29px 68px;
   }
 
-  #Email {
-    border: none;
-    width: 538px;
+  .email-field {
+    padding-left: 2%;
+  }
+
+  .emailfield-bottomline {
+    margin: 0 -30px 0 -17px;
+    width: 670px;
+    border: 1px solid #dbd8d7;
   }
 
   .writeme-something-field {
@@ -1262,35 +1261,16 @@ ul {
     line-height: 24px;
     letter-spacing: 0;
     color: #3c3a39;
-    text-align: left;
-    padding: 12px;
+    padding: 10px;
     height: 90px;
-    margin: 56px;
-    margin-top: -2px;
-    width: 644px;
+    margin: 50px;
+    margin-top: -1px;
+    width: 675px;
   }
 
-  .submit-button-container {
-    width: 136px;
-    height: 56px;
-    margin-top: -36px;
-    margin-left: 57px;
-    background-color: #ff6b00;
-  }
-
-  .buttom-icon-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 28px;
-    list-style: none;
-    width: 435px;
-    height: 13px;
-    /* position: absolute; */
-    /* bottom: -3935px; */
-    /* left: 474px; */
-    /* right: 0; */
+  .getintouch-button {
+    margin-left: 50px;
+    margin-top: -30px;
   }
 
   .footer-bottom {
