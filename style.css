@@ -197,6 +197,10 @@ ul {
   margin-bottom: 30px;
 }
 
+.imageWrapper {
+  transform: scale(1);
+}
+
 .portfolioImageMobile {
   display: inline;
   width: 327px;
@@ -840,6 +844,11 @@ ul {
     margin-right: -78px;
     height: 436px;
     width: 540px;
+  }
+
+  .portfolioImageDesktop:hover {
+    transform: scale(0.9);
+    transition: all 0.7s;
   }
 
   .right-section {
