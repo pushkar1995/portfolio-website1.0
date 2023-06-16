@@ -208,6 +208,11 @@ ul {
   margin-left: 27px;
 }
 
+.portfolioImageDesktop:hover {
+  transform: scale(0.9);
+  transition: all 0.7s;
+}
+
 .multiPostStories {
   display: flex;
   align-items: center;
@@ -844,11 +849,6 @@ ul {
     margin-right: -78px;
     height: 436px;
     width: 540px;
-  }
-
-  .portfolioImageDesktop:hover {
-    transform: scale(0.9);
-    transition: all 0.7s;
   }
 
   .right-section {
