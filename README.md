@@ -97,6 +97,8 @@ npx eslint .
 ```
 ### Deployment
 
+- [Live Demo Link](https://pushkar1995.github.io/portfolio-website1.0/)
+
 You can deploy this project using:
 
 - Github Pages
