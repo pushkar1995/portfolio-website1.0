@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Edu+SA+Beginner:wght@400;500&family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Pushkar's Portifolio Website</title>
     <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +24,7 @@
     <!-- Toolbar Section -->
     <header class="header-container">
         <a href="#" class="logo-container">
-            <img src="images/LogoPortfolioWebsite.png" />
+            <img src="images/LogoPortfolioWebsite.png" alt="Website-Logo" />
         </a>
         <nav class="hamburger-icon">
             <i class="fas fa-bars"></i>
@@ -35,7 +35,7 @@
             <a href="#" class="navbarItem">Portfolio</a>
             <a href="#" class="navbarItem">About</a>
             <a href="#" class="navbarItem">Contact</a>
-            <a href="#"><img src="images/icons/IconMail.png" alt="Messsage" class="navbarMailIcon" /></a>
+            <a href="#"><img src="images/icons/IconMail.png" alt="Messsage-Icon" class="navbarMailIcon" /></a>
         </nav>
     </header>
 
@@ -74,8 +74,8 @@
             </div>
             <div class="topcard-body">
                 <a class="imageWrapper" href="#">
-                    <img src="images/PortfolioPhoto1.png" alt="PortfolioImageMobile" class="portfolioImageMobile" />
-                    <img src="images/PortfolioPhoto1.png" alt="PortfolioImageDesktop" class="portfolioImageDesktop" />
+                    <img src="images/PortfolioPhoto1.png" alt="PortfolioImage-Mobile" class="portfolioImageMobile" />
+                    <img src="images/PortfolioPhoto1.png" alt="PortfolioImage-Desktop" class="portfolioImageDesktop" />
                 </a>
                 <div class="right-section">
                     <h3 class="multiPostStories">Multi-Post Stories</h3>
@@ -331,25 +331,25 @@
             <form class="contactform-container" id="form" action="https://formspree.io/f/myyaqdnr" method="post">
                 <ul class="inputs-wrapper">
                     <li class="inputFullName">
-                        <input type="text" name="Name" class="fullname-field" placeholder="Full name" minlength="1"
-                            maxlength="30" required />
+                        <input type="text" name="Name" aria-label="fullName" class="fullname-field"
+                            placeholder="Full name" minlength="1" maxlength="30" required />
                         <div class="namefield-bottomline"></div>
                     </li>
 
                     <li class="firstNameFieldWrapper">
-                        <input name="Name" type="Text" class="firstNameInputField" id="firstName"
-                            placeholder="First name" maxlength="30" required />
+                        <input name="Name" type="Text" aria-label="First Name" class="firstNameInputField"
+                            id="firstName" placeholder="First name" maxlength="30" required />
                         <div class="namefield-bottomline"></div>
                     </li>
                     <li class="lastNameFieldWrapper">
-                        <input name="LastName" type="Text" id="lastName" class="lastNameInputField"
-                            placeholder="Last name" maxlength="30" required />
+                        <input name="LastName" type="Text" id="lastName" aria-label="Last Name"
+                            class="lastNameInputField" placeholder="Last name" maxlength="30" required />
                         <div class="namefield-bottomline"></div>
                     </li>
 
                     <li class="emailInputField">
-                        <input type="Email" id="Email" name="Email" class="email-field" placeholder="Email address"
-                            required />
+                        <input type="Email" id="Email" name="Email" aria-label="email" class="email-field"
+                            placeholder="Email address" required />
                         <div class="emailfield-bottomline"></div>
                     </li>
                     <li>
