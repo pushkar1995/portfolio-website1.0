@@ -38,14 +38,6 @@
   .secondBackgroundImage-d {
     display: none;
   }
-
-  .firstNameFieldWrapper {
-    display: none;
-  }
-
-  .lastNameFieldWrapper {
-    display: none;
-  }
 }
 
 * {
@@ -592,15 +584,11 @@ ul {
 }
 
 .namefield-bottomline {
+  margin-top: -20px;
   margin-right: 0.1rem;
   margin-left: 0.1rem;
   width: 324px;
   border: 0.01rem solid #dbd8d7;
-}
-
-.emailInputField {
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .email-field {
@@ -616,6 +604,7 @@ ul {
 }
 
 .emailfield-bottomline {
+  margin-top: -20px;
   margin-right: 0.1rem;
   margin-left: 0.1rem;
   width: 324px;
@@ -691,7 +680,11 @@ ul {
 
 /* Media Queries for Desktop Version */
 
-@media (min-width: 768px) {
+@media (min-width: 769px) and (max-width: 1920px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .logo-container {
     width: 70px;
     height: 16px;
@@ -1205,67 +1198,32 @@ ul {
 
   .contactform-container {
     display: flex;
-  }
-
-  .inputs-wrapper {
-    display: flex;
     padding: 0;
     list-style: none;
     flex-direction: column;
     margin-left: -70px;
   }
 
+  .fullname-field {
+    margin-right: 340px;
+    padding: 5px;
+    padding-left: 20px;
+  }
+
   .namefield-bottomline {
-    margin: 4px -19px 0;
-    width: 315px;
+    margin: -20px -20px 0 -20px;
+    width: 670px;
     border: 1px solid #dbd8d7;
   }
 
-  .inputFullName {
-    display: none;
-  }
-
-  .firstNameFieldWrapper {
-    font-weight: 400;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex: 1 auto;
-    margin-left: 69px;
-    margin-right: -42px;
-  }
-
-  .firstNameInputField {
-    border: none;
-    width: 300px;
-    height: 48px;
-    font-size: 0.9rem;
-    padding-left: 3%;
-  }
-
-  .lastNameFieldWrapper {
-    margin-left: 425px;
-    margin-right: -15px;
-  }
-
-  .lastNameInputField {
-    border: none;
-    width: 300px;
-    height: 48px;
-    font-size: 0.9rem;
-    padding-left: 3%;
-  }
-
-  .emailInputField {
-    margin: 26px 150px 29px 68px;
-  }
-
   .email-field {
-    padding-left: 2%;
+    margin-right: 340px;
+    padding: 5px;
+    padding-left: 20px;
   }
 
   .emailfield-bottomline {
-    margin: 0 -30px 0 -17px;
+    margin: -20px -20px 0 -20px;
     width: 670px;
     border: 1px solid #dbd8d7;
   }
@@ -1281,7 +1239,9 @@ ul {
     line-height: 24px;
     letter-spacing: 0;
     color: #3c3a39;
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 50px;
+    padding-left: 20px;
     height: 90px;
     margin: 50px;
     margin-top: -1px;
@@ -1289,8 +1249,8 @@ ul {
   }
 
   .getintouch-button {
-    margin-left: 50px;
-    margin-top: -30px;
+    margin-left: -545px;
+    margin-top: -55px;
   }
 
   .footer-bottom {
