@@ -26,21 +26,33 @@
         <a href="#" class="logo-container">
             <img src="images/LogoPortfolioWebsite.png" alt="Website-Logo" />
         </a>
-        <nav class="hamburger-icon">
-            <i class="fas fa-bars"></i>
-        </nav>
 
-        <!-- nav element update -->
-        <nav id="navbarElement">
-            <a href="#" class="navbarItem">Portfolio</a>
-            <a href="#" class="navbarItem">About</a>
-            <a href="#" class="navbarItem">Contact</a>
-            <a href="#"><img src="images/icons/IconMail.png" alt="Messsage-Icon" class="navbarMailIcon" /></a>
+        <nav>
+            <div class="hamburger-icon">
+                <i class="fas fa-bars fa-lg"></i>
+            </div>
+            <!-- nav element update -->
+            <div class="navbar-menu-items">
+                <a href="#" class="navbarItem">Portfolio</a>
+                <a href="#" class="navbarItem">About</a>
+                <a href="#" class="navbarItem">Contact</a>
+                <a href="#"><img src="images/icons/IconMail.png" alt="Messsage-Icon" class="navbarMailIcon" /></a>
+            </div>
+            <div class="mobile-menu-list">
+                <div class="x-closeicon-wrapper">
+                    <img class="x-close-icon" src="images/icons/Cancel-Icon.png" alt="Close-Icon-Image">
+                </div>
+                <ul>
+                    <li> <a href="#my-portfolio"> Portfolio</a> </li>
+                    <li> <a href="#about-me">About</a></li>
+                    <li> <a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Header Section -->
-    <section class="headline-container headline-container-d">
+    <section id="my-portfolio" class="headline-container headline-container-d">
         <h1 class="heading-text">Hey There.<br />I'm Pushkar.</h1>
         <h2 class="subheader">I'm a Software Developer</h2>
         <p class="description-text">I can help you build a product, feature or website Look through some of my work
@@ -259,7 +271,7 @@
     </section>
 
     <!-- About Profile Section -->
-    <section>
+    <section id="about-me">
         <div class="aboutme-container">
             <div class="aboutme-info-section">
                 <h2 class="aboutme-header">About Me</h2>
@@ -322,7 +334,7 @@
 
     <!-- 3rd Contact Form Section  -->
 
-    <section>
+    <section id="contact-form">
         <div class="contactform-maincontainer">
             <div class="contactform-headercontainer">
                 <p class="contactform-headertext">I'm always intrested in hearing about new projects,
@@ -364,7 +376,7 @@
         </ul>
         <div class="footer-bottom"></div>
     </section>
-
+    <script src="mobileMenu.js"></script>
 </body>
 
 </html>
