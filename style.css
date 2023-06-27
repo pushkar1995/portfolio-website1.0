@@ -3,7 +3,7 @@
     display: none;
   }
 
-  #navbarElement {
+  .navbar-menu-items {
     display: none;
   }
 
@@ -82,6 +82,10 @@ body {
 .hamburger-icon {
   color: white;
   padding-right: 1rem;
+}
+
+.mobile-menu-list {
+  display: none;
 }
 
 .headline-container {
@@ -712,7 +716,7 @@ ul {
     display: none;
   }
 
-  #navbarElement {
+  .navbar-menu-items {
     display: flex;
     justify-content: end;
     margin-right: 100px;
@@ -735,6 +739,14 @@ ul {
   .navbarMailIcon {
     align-items: center;
     margin-top: -4px;
+  }
+
+  .mobile-menu-list {
+    display: none;
+  }
+
+  .x-close-icon {
+    display: none;
   }
 
   .headline-container-d {
