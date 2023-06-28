@@ -669,6 +669,10 @@ ul {
   border: 0.01rem solid #dbd8d7;
 }
 
+.error-text {
+  color: red;
+}
+
 .writeme-something-field {
   width: 327px;
   height: 38px;
@@ -1292,6 +1296,10 @@ ul {
     margin: -20px -20px 0 -20px;
     width: 670px;
     border: 1px solid #dbd8d7;
+  }
+
+  .error-text {
+    color: red;
   }
 
   .writeme-something-field {

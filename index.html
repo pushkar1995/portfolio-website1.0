@@ -346,9 +346,10 @@
                     minlength="1" maxlength="30" required />
                 <div class="namefield-bottomline"></div>
 
-                <input type="Email" id="Email" name="Email" aria-label="email" class="email-field"
+                <input type="email" id="email" name="email" aria-label="email" class="email-field"
                     placeholder="Email address" required />
                 <div class="emailfield-bottomline"></div>
+                <div id="error" class="error-text"></div>
 
                 <input type="message" name="message" class="writeme-something-field" placeholder="Write me something..."
                     aria-multiline="1" maxlength="500" required />
@@ -376,7 +377,8 @@
         </ul>
         <div class="footer-bottom"></div>
     </section>
-    <script src="mobileMenu.js"></script>
+    <script src="javascript-components/mobileMenu.js"></script>
+    <script src="javascript-components/contactFormValidation.js"></script>
 </body>
 
 </html>
