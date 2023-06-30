@@ -116,8 +116,8 @@ window.onload = function load() {
             <div id="multipost-body" class="topcard-multipost-body">
                 <img class="multipost-img-placeholder" src="images/PortfolioPhoto1.png" alt="MultiPost-PlaceholderImg" />
                 <div class="multipost-section">
-                    <h3 id="multipost-heading" class="multiPostStories">Multi-Post Stories</h3>
-                    <p id="multipost-details-section" class="page-information">
+                    <h3 id="multipost-heading" class="multiPostStories-heading">Multi-Post Stories</h3>
+                    <p id="multipost-details-section" class="multipost-info-section">
                         A daily selection of privately personalized reads; no accounts or
                         sign-ups required. has been the industry's standard dummy text ever
                         since the 1500s, when an unknown printer took a standard dummy text.

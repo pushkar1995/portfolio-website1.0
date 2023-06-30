@@ -215,19 +215,17 @@ ul {
   margin-top: 3.125rem;
 }
 
+.topcard-multipost-body {
+  flex-direction: column;
+  display: flex;
+}
+
 .multipost-img-placeholder {
   height: 14.8125rem;
   width: 20.4375rem;
   left: 1.5rem;
-
-  /* border-radius: 0.3125rem; */
   background-size: cover;
   margin-top: 0.625rem;
-}
-
-.topcard-multipost-body {
-  flex-direction: column;
-  display: flex;
 }
 
 .multiPostStories-heading {
@@ -244,7 +242,7 @@ ul {
 
 .multipost-info-section {
   width: 20.4375rem;
-  font-family: Inter, serif;
+  font-family: 'Inter', serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -363,14 +361,6 @@ ul {
   justify-content: space-between;
   list-style: none;
 }
-
-/* .general-card-container {
-  display: grid;
-  justify-items: center;
-  grid-template-rows: repeat(6, 370px);
-  grid-template-columns: 100px;
-  margin-left: 138px;
-} */
 
 .general-card-one {
   display: flex;
@@ -507,19 +497,6 @@ ul {
   justify-content: space-between;
   list-style: none;
 }
-
-/* .btn {
-  padding: 0.625rem 0.75rem;
-  background: rgb(255 255 255 / 24%);
-  color: #fff;
-  width: 15.4375rem;
-  height: 2.5rem;
-  margin-left: 0.8125rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-} */
 
 .gc-project-button {
   width: 20.4375rem;
@@ -689,7 +666,6 @@ ul {
   flex-direction: column;
   padding-top: 120px;
   position: relative;
-  margin-top: 275px;
   background-repeat: no-repeat;
   margin-left: -2px;
 }
@@ -1068,13 +1044,6 @@ ul {
   .topcard-header-container {
     display: flex;
     margin-left: 110px;
-  }
-
-  .myRecentWorksHeading {
-    font-family: "Crete Round", sans-serif;
-    font-size: 40px;
-    margin-left: -30px;
-    width: 314px;
   }
 
   .section-break-firstline {
