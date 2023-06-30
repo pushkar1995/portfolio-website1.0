@@ -233,15 +233,15 @@ window.onload = function load() {
   projectsSection.appendChild(section);
 
   const seeProjects = [];
-  allProjects.forEach((project, index) => seeProjects.push(document.getElementById(`projects-${index + 1}`)));
+  allProjects.forEach((project, index) => seeProjects.push(document.getElementById(`allProjects-${index + 1}`)));
   let id;
   seeProjects.forEach((el) => {
     el.addEventListener('click', (e) => {
       id = e.target.id;
-      document.querySelector('.popup-heading').textContent = allProjects[id.slice(-1) - 1].title;
+      document.querySelector('.popup-heading').textContent = allProjects[id.slice(-1) - 1].name;
 
       document.querySelector('.project-details-popup').classList.toggle('show');
-      document.getElementById('headline').scrollIntoView();
+      document.getElementById('my-portfolio').scrollIntoView();
       document.querySelector('#close-icon-detail').classList.toggle('close-icon-detail');
       document.querySelector('.project-details-popup').classList.toggle('show');
     });
@@ -250,7 +250,7 @@ window.onload = function load() {
   document.querySelector('#close-icon-detail').addEventListener('click', () => {
     document.querySelector('.project-details-popup').classList.toggle('show');
     document.querySelector('#close-icon-detail').classList.toggle('show');
-    if (id === 'projects-1') {
+    if (id === 'button-p1') {
       document.getElementById(id).focus();
     } else {
       const section = document.querySelector('#card-section');
