@@ -535,14 +535,13 @@ ul {
   height: 205vh;
   width: 100vw;
   position: fixed;
-  top: 20px;
+  top: 6px;
   z-index: 5000;
   display: none;
   align-self: center;
 }
 
 .project-details-inner {
-  /* margin: auto; */
   background-color: #fff;
   padding: 15px 16px 15px 15px;
   display: flex;
@@ -554,7 +553,6 @@ ul {
 .project-details-header {
   display: flex;
   flex-direction: column;
-  gap: 33px 0;
   align-self: stretch;
 }
 
@@ -601,6 +599,8 @@ ul {
 
 .popup-content img {
   border: 2px inset #eee;
+  height: 167px;
+  width: 314px;
 }
 
 .popup-lower {
@@ -1190,7 +1190,13 @@ ul {
   .project-details-inner img {
     width: 50%;
     max-height: 448px;
-    max-width: 660px;
+    max-width: 760px;
+  }
+
+  .popup-content img {
+    border: 2px inset #eee;
+    height: 467px;
+    width: 614px;
   }
 
   .project-details-header {
