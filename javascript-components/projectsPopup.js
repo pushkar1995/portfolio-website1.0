@@ -1,83 +1,83 @@
 const allProjects = [
   {
     id: 1,
-    name: 'Multi Post Stories',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Multi Post Stories',
     image: '../images/popup-image.png',
     description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+        'Multi Post Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
   {
     id: 2,
-    name: 'Professional Art Printing Data',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Professional Art Printing Data',
     image: '../images/popup-image.png',
     description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+        'General Card One Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
   {
     id: 3,
-    name: 'Professional Art Printing Data',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Professional Art Printing Data',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
   {
     id: 4,
-    name: 'Professional Art Printing Data',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Professional Art Printing Data',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
   {
     id: 5,
-    name: 'Professional Art Printing Data',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Professional Art Printing Data',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
   {
     id: 6,
-    name: 'Professional Art Printing Data',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Professional Art Printing Data',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
   {
     id: 7,
-    name: 'Professional Art Printing Data',
-    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
+    title: 'Art Printing Data',
     image: '../images/popup-image.png',
     description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+        'G Card 6 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
     sourceLink: '',
   },
 ];
 
 allProjects.forEach((project) => {
-  document.getElementById('project-modal').innerHTML = `
+  document.getElementById('projectmodal').innerHTML = `
   <div class="project-details-popup">
     <div class="project-details-inner">
         <div class="project-details-header">
             <div class="pop-head">
-                <h3 class="popup-heading">${project.name}</h3>
+                <h3 class="popup-heading">${project.title}</h3>
                 <i id="close-icon-detail" alt="icon"></i>
             </div>
             <div>
@@ -232,4 +232,29 @@ window.onload = function load() {
   `;
   projectsSection.appendChild(section);
 
-}
+  const seeProjects = [];
+  allProjects.forEach((project, index) => seeProjects.push(document.getElementById(`projects-${index + 1}`)));
+  let id;
+  seeProjects.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      id = e.target.id;
+      document.querySelector('.popup-heading').textContent = allProjects[id.slice(-1) - 1].title;
+
+      document.querySelector('.project-details-popup').classList.toggle('show');
+      document.getElementById('headline-container').scrollIntoView();
+      document.querySelector('#close-icon-detail').classList.toggle('close-icon-detail');
+      document.querySelector('.project-details-popup').classList.toggle('show');
+    });
+  });
+
+  document.querySelector('#close-icon-detail').addEventListener('click', () => {
+    document.querySelector('.project-details-popup').classList.toggle('show');
+    document.querySelector('#close-icon-detail').classList.toggle('show');
+    if (id === 'button-p1') {
+      document.getElementById(id).focus();
+    } else {
+      const section = document.querySelector('#card-section');
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+};

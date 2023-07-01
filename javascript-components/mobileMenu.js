@@ -1,3 +1,4 @@
+// Mobile Menu Section
 const hamburgericon = document.querySelector('.fa-bars');
 const menulist = document.querySelector('.mobile-menu-list');
 const close = document.querySelector('.x-close-icon');

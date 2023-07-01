@@ -524,6 +524,12 @@ ul {
   background-color: #e05304;
 }
 
+.general-card-button:disabled {
+  border: 1px solid transparent;
+  color: #5b5957;
+  background-color: #e9a994;
+}
+
 .project-details-popup.show {
   display: block;
 }
@@ -982,7 +988,7 @@ ul {
     display: none;
   }
 
-  .headline-container-d {
+  .headline-container {
     width: 100%;
     height: 550px;
     background-image: url('images/desktop-img/header-background-d.png');
@@ -1196,6 +1202,7 @@ ul {
   .tech-list li {
     border: 1px solid #8993a4;
     padding: 10px 12px;
+    margin-bottom: 10px;
     background-color: #ffffff3a;
     font-family: "Inter", sans-serif;
   }
