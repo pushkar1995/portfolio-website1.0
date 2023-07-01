@@ -62,7 +62,7 @@ mainCard += `
         <li class="bootstrap-button">Bootstrap</li>
         <li class="ruby-button">Ruby</li>
     </ul>
-    <button id="button-p1" class="topcontainer-seeproject-button">See Project</button>
+    <button id="button-p1" data-modal-target="#modal1" class="topcontainer-seeproject-button">See Project</button>
 </div>
 </div>
 
@@ -71,23 +71,13 @@ mainCard += `
 <!-- General Card -->
 <div class="general-card-one" id="cardA">
 <div class="g-card-image1" id="g-card-imageA"></div>
-<h3 class="card-heading">Professional Art Printing Data</h3>
-<p class="card-text-segment">
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required. Has been the industry's standard.
-</p>
-<ul class="card-buttons" id="card-tech-list1">
-    <li class="btn btn-primary btn-lg">HTML</li>
-    <li class="btn btn-primary btn-lg">Bootstrap</li>
-    <li class="btn btn-primary btn-lg">Ruby</li>
-</ul>
-<button id="button-p2" data-modal-target="#modal1" class="gc-project-button">See Project</button>
+<button id="button-p2" data-modal-target="#modal2" class="gc-project-button">See Project</button>
 </div>
 
 <!-- General Card 2 -->
 <div class="general-card-two">
 <div class="g-card-image2" id="g-card-imageB"></div>
-<h3 class="card-heading">Professional Art Printing Data</h3>
+<h3 class="card-heading">Data Dashboard Healthcare</h3>
 <p class="card-text-segment">
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -97,13 +87,13 @@ mainCard += `
     <li class="btn btn-primary btn-lg">Bootstrap</li>
     <li class="btn btn-primary btn-lg">Ruby</li>
 </ul>
-<button id="button-p3" class="gc-project-button">See Project</button>
+<button id="button-p3" data-modal-target="#modal3" class="gc-project-button">See Project</button>
 </div>
 
 <!-- General Card 3 -->
 <div class="general-card-three">
 <div class="g-card-image3" id="g-card-imageC"></div>
-<h3 class="card-heading">Professional Art Printing Data</h3>
+<h3 class="card-heading">Website Portfolio</h3>
 <p class="card-text-segment">
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -113,13 +103,13 @@ mainCard += `
     <li class="btn btn-primary btn-lg">Bootstrap</li>
     <li class="btn btn-primary btn-lg">Ruby</li>
 </ul>
-<button id="button-p4" class="gc-project-button">See Project</button>
+<button id="button-p4" data-modal-target="#modal4" class="gc-project-button">See Project</button>
 </div>
 
 <!-- General Card 4 -->
 <div class="general-card-four">
 <div class="g-card-image4" id="g-card-imageD"></div>
-<h3 class="card-heading">Professional Art Printing Data</h3>
+<h3 class="card-heading">Professional Art Printing Data More</h3>
 <p class="card-text-segment">
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -129,13 +119,13 @@ mainCard += `
     <li class="btn btn-primary btn-lg">Bootstrap</li>
     <li class="btn btn-primary btn-lg">Ruby</li>
 </ul>
-<button id="button-p5" class="gc-project-button">See Project</button>
+<button id="button-p5" data-modal-target="#modal5" class="gc-project-button">See Project</button>
 </div>
 
 <!-- General Card 5 -->
 <div class="general-card-five">
 <div class="g-card-image5" id="g-card-imageE"></div>
-<h3 class="card-heading">Professional Art Printing Data</h3>
+<h3 class="card-heading">Data Dashboard Healthcare</h3>
 <p class="card-text-segment">
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -145,13 +135,13 @@ mainCard += `
     <li class="btn btn-primary btn-lg">Bootstrap</li>
     <li class="btn btn-primary btn-lg">Ruby</li>
 </ul>
-<button id="button-p6" class="gc-project-button">See Project</button>
+<button id="button-p6" data-modal-target="#modal6" class="gc-project-button">See Project</button>
 </div>
 
 <!-- General Card 6 -->
 <div class="general-card-six">
 <div class="g-card-image6" id="g-card-imageF"></div>
-<h3 class="card-heading">Professional Art Printing Data</h3>
+<h3 class="card-heading">Website Portfolio</h3>
 <p class="card-text-segment">
     A daily selection of privately personalized reads; no accounts or
     sign-ups required. Has been the industry's standard.
@@ -161,19 +151,49 @@ mainCard += `
     <li class="btn btn-primary btn-lg">Bootstrap</li>
     <li class="btn btn-primary btn-lg">Ruby</li>
 </ul>
-<button id="button-p7" class="gc-project-button">See Project</button>
+<button id="button-p7" data-modal-target="#modal7" class="gc-project-button">See Project</button>
 </div>
 `;
 workSection.innerHTML = mainCard;
 
 let modals = '';
 modals += `
-<div id="modal1" class="project-details-popup">
-<div class="project-details-inner">
+<div id="modal1" class="modal">
     <div class="project-details-header">
         <div class="pop-head">
             <h3 class="popup-heading">${titleArr[0]}</h3>
-            <i id="close-icon-detail" alt="icon"></i>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
+        </div>
+        <div>
+          <ul class="tech-list">
+            <li>${technologiesArr[0]}</li>
+            <li>${technologiesArr[1]}</li>
+            <li>${technologiesArr[2]}</li>
+            <li>${technologiesArr[3]}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src=${imageArr[6]} alt="Portfolio snapshot image">
+        <div class="popup-lower">
+            <p>${descriptionArr[0]}</p>
+            <div class="modal-buttons">
+                <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
+                <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="project-details-header">
+        <div class="pop-head">
+            <h3 class="popup-heading">${titleArr[3]}</h3>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
         </div>
         <div>
           <ul class="tech-list">
@@ -186,7 +206,7 @@ modals += `
     <div class="popup-content">
         <img src=${imageArr[6]} alt="Portfolio snapshot image">
         <div class="popup-lower">
-            <p>$${descriptionArr[2]}</p>
+            <p>${descriptionArr[1]}</p>
             <div class="modal-buttons">
                 <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
                 <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
@@ -194,6 +214,145 @@ modals += `
         </div>
     </div>
 </div>
+
+<div id="modal3" class="modal">
+    <div class="project-details-header">
+        <div class="pop-head">
+            <h3 class="popup-heading">${titleArr[1]}</h3>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
+        </div>
+        <div>
+          <ul class="tech-list">
+            <li>${technologiesArr[0]}</li>
+            <li>${technologiesArr[1]}</li>
+            <li>${technologiesArr[3]}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src=${imageArr[6]} alt="Portfolio snapshot image">
+        <div class="popup-lower">
+            <p>${descriptionArr[1]}</p>
+            <div class="modal-buttons">
+                <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
+                <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="project-details-header">
+        <div class="pop-head">
+            <h3 class="popup-heading">${titleArr[2]}</h3>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
+        </div>
+        <div>
+          <ul class="tech-list">
+            <li>${technologiesArr[0]}</li>
+            <li>${technologiesArr[1]}</li>
+            <li>${technologiesArr[3]}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src=${imageArr[6]} alt="Portfolio snapshot image">
+        <div class="popup-lower">
+            <p>${descriptionArr[1]}</p>
+            <div class="modal-buttons">
+                <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
+                <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="project-details-header">
+        <div class="pop-head">
+            <h3 class="popup-heading">${titleArr[3]}</h3>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
+        </div>
+        <div>
+          <ul class="tech-list">
+            <li>${technologiesArr[0]}</li>
+            <li>${technologiesArr[1]}</li>
+            <li>${technologiesArr[3]}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src=${imageArr[6]} alt="Portfolio snapshot image">
+        <div class="popup-lower">
+            <p>${descriptionArr[1]}</p>
+            <div class="modal-buttons">
+                <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
+                <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="project-details-header">
+        <div class="pop-head">
+            <h3 class="popup-heading">${titleArr[1]}</h3>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
+        </div>
+        <div>
+          <ul class="tech-list">
+            <li>${technologiesArr[0]}</li>
+            <li>${technologiesArr[1]}</li>
+            <li>${technologiesArr[3]}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src=${imageArr[6]} alt="Portfolio snapshot image">
+        <div class="popup-lower">
+            <p>${descriptionArr[1]}</p>
+            <div class="modal-buttons">
+                <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
+                <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal7" class="modal">
+    <div class="project-details-header">
+        <div class="pop-head">
+            <h3 class="popup-heading">${titleArr[2]}</h3>
+            <div data-close-button class="close-button">
+                <i id="close-icon-detail" alt="icon"></i>
+            </div>
+        </div>
+        <div>
+          <ul class="tech-list">
+            <li>${technologiesArr[0]}</li>
+            <li>${technologiesArr[1]}</li>
+            <li>${technologiesArr[3]}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="popup-content">
+        <img src=${imageArr[6]} alt="Portfolio snapshot image">
+        <div class="popup-lower">
+            <p>$${descriptionArr[1]}</p>
+            <div class="modal-buttons">
+                <div class="btn-details"><a target="_blank" href=${cardInfos.live}>See Live</a><i class="live-icon"></i></div>
+                <div class="btn-details"><a target="_blank" href=${cardInfos.source}>See Source</a><i class="source-icon"></i></div>
+            </div>
+        </div>
+    </div>
 </div>
 `;
 
