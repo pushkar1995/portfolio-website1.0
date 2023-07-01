@@ -99,6 +99,11 @@ ul {
   margin-right: 15px;
 }
 
+.modal-buttons a {
+  text-decoration: none;
+  color: white;
+}
+
 .mobile-menu-list ul li a {
   text-decoration: none;
   font-family: Inter, sans-serif;
@@ -290,7 +295,7 @@ ul {
 }
 
 .bootstrap-button {
-  width: 95px;
+  width: 115px;
   height: 40px;
   border: 1px solid #8993a4;
   padding: 0.625rem 0.75rem;
@@ -349,7 +354,7 @@ ul {
   color: #f4f1f0;
 }
 
-.btn {
+/* .btn {
   padding: 0.625rem 0.75rem;
   background: rgb(255 255 255 / 24%);
   color: #fff;
@@ -360,7 +365,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-}
+} */
 
 .general-card-one {
   display: flex;
@@ -541,9 +546,10 @@ ul {
   height: 205vh;
   width: 100vw;
   position: fixed;
-  top: 0;
+  top: 20px;
   z-index: 5000;
   display: none;
+  align-self: center;
 }
 
 .project-details-inner {
@@ -592,6 +598,8 @@ ul {
   gap: 1rem;
   justify-content: flex-start;
   list-style: none;
+  margin-bottom: 20px;
+  margin-top: 45px;
 }
 
 .popup-content {
@@ -615,7 +623,7 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 0 20px;
-  margin-top: 150px;
+  margin-top: 20px;
 }
 
 .modal-buttons div {
@@ -628,12 +636,14 @@ ul {
   background: url(/images/icons/export-icon.png) no-repeat center center/cover;
   width: 24px;
   height: 24px;
+  display: block;
 }
 
 .source-icon {
   background: url(/images/media-icons/github-icon.svg) no-repeat center center/cover;
   width: 24px;
   height: 24px;
+  display: block;
 }
 
 .btn-details {
@@ -1091,9 +1101,9 @@ ul {
     grid-gap: 24px 14px;
   }
 
-  #cardA {
+  /* #cardA {
     gap: 0.2rem;
-  }
+  } */
 
   .gc-project-button {
     display: none;
@@ -1179,6 +1189,7 @@ ul {
 
   .project-details-popup {
     padding: 3rem 7.3rem;
+    overflow: scroll;
   }
 
   .project-details-inner {
@@ -1199,6 +1210,11 @@ ul {
     justify-content: space-between;
   }
 
+  .tech-list {
+    margin-bottom: 70px;
+    margin-top: 10px;
+  }
+
   .tech-list li {
     border: 1px solid #8993a4;
     padding: 10px 12px;
@@ -1209,6 +1225,7 @@ ul {
 
   .popup-content {
     flex-direction: row;
+    margin-top: -20px;
   }
 
   .popup-lower {
@@ -1222,6 +1239,9 @@ ul {
   }
 
   .modal-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: -12px;
     justify-content: flex-start;
   }
 

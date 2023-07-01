@@ -4,70 +4,74 @@ const allProjects = [
     title: 'Multi Post Stories',
     image: '../images/popup-image.png',
     description:
-        'Multi Post Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+        `<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>`,
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
   {
     id: 2,
-    title: 'Professional Art Printing Data',
+    title: 'Professional Art Printing',
     image: '../images/popup-image.png',
     description:
         'General Card One Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
   {
     id: 3,
-    title: 'Professional Art Printing Data',
+    title: 'Data Dashboard Healthcare',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
   {
     id: 4,
-    title: 'Professional Art Printing Data',
+    title: 'Website Portfolio',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
   {
     id: 5,
-    title: 'Professional Art Printing Data',
+    title: 'Professional Art Printing Data More',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
   {
     id: 6,
-    title: 'Professional Art Printing Data',
+    title: 'Data Dashboard Healthcare',
     image: '../images/popup-image.png',
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
   {
     id: 7,
-    title: 'Art Printing Data',
+    title: 'Website Portfolio',
     image: '../images/popup-image.png',
     description:
-        'G Card 6 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+        `<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>`,
     technologies: ['CSS', 'HTML', 'BOOTSTRAP', 'RUBY ON RAILS'],
     liveLink: '',
-    sourceLink: '',
+    sourceLink: 'https://github.com/pushkar1995/portfolio-website1.0',
   },
 ];
 
@@ -82,9 +86,9 @@ allProjects.forEach((project) => {
             </div>
             <div>
               <ul class="tech-list">
-                <li>${project.technologies[0]}</li>
-                <li>${project.technologies[1]}</li>
-                <li>${project.technologies[2]}</li>
+                <li class="css-button">${project.technologies[0]}</li>
+                <li class="html-button">${project.technologies[1]}</li>
+                <li class="bootstrap-button">${project.technologies[2]}</li>
               </ul>
             </div>
         </div>
@@ -128,7 +132,7 @@ window.onload = function load() {
                         <li class="bootstrap-button">Bootstrap</li>
                         <li class="ruby-button">Ruby</li>
                     </ul>
-                    <button id="button-p1" class="topcontainer-seeproject-button">See Project</button>
+                    <button id="button-1" class="topcontainer-seeproject-button">See Project</button>
                 </div>
             </div>
 
@@ -137,23 +141,13 @@ window.onload = function load() {
             <!-- General Card -->
             <div class="general-card-one" id="cardA">
                 <div class="g-card-image1" id="g-card-imageA"></div>
-                <h3 class="card-heading">Professional Art Printing Data</h3>
-                <p class="card-text-segment">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. Has been the industry's standard.
-                </p>
-                <ul class="card-buttons" id="card-tech-list1">
-                    <li class="btn btn-primary btn-lg">HTML</li>
-                    <li class="btn btn-primary btn-lg">Bootstrap</li>
-                    <li class="btn btn-primary btn-lg">Ruby</li>
-                </ul>
-                <button id="button-p2" class="gc-project-button">See Project</button>
+                <button id="button-2" class="gc-project-button">See Project</button>
             </div>
 
             <!-- General Card 2 -->
             <div class="general-card-two">
                 <div class="g-card-image2" id="g-card-imageB"></div>
-                <h3 class="card-heading">Professional Art Printing Data</h3>
+                <h3 class="card-heading">Data Dashboard Healthcare</h3>
                 <p class="card-text-segment">
                     A daily selection of privately personalized reads; no accounts or
                     sign-ups required. Has been the industry's standard.
@@ -163,13 +157,13 @@ window.onload = function load() {
                     <li class="btn btn-primary btn-lg">Bootstrap</li>
                     <li class="btn btn-primary btn-lg">Ruby</li>
                 </ul>
-                <button id="button-p3" class="gc-project-button">See Project</button>
+                <button id="button-3" class="gc-project-button">See Project</button>
             </div>
 
             <!-- General Card 3 -->
             <div class="general-card-three">
                 <div class="g-card-image3" id="g-card-imageC"></div>
-                <h3 class="card-heading">Professional Art Printing Data</h3>
+                <h3 class="card-heading">Website Portfolio</h3>
                 <p class="card-text-segment">
                     A daily selection of privately personalized reads; no accounts or
                     sign-ups required. Has been the industry's standard.
@@ -179,13 +173,13 @@ window.onload = function load() {
                     <li class="btn btn-primary btn-lg">Bootstrap</li>
                     <li class="btn btn-primary btn-lg">Ruby</li>
                 </ul>
-                <button id="button-p4" class="gc-project-button">See Project</button>
+                <button id="button-4" class="gc-project-button">See Project</button>
             </div>
 
             <!-- General Card 4 -->
             <div class="general-card-four">
                 <div class="g-card-image4" id="g-card-imageD"></div>
-                <h3 class="card-heading">Professional Art Printing Data</h3>
+                <h3 class="card-heading">Professional Art Printing Data More</h3>
                 <p class="card-text-segment">
                     A daily selection of privately personalized reads; no accounts or
                     sign-ups required. Has been the industry's standard.
@@ -195,13 +189,13 @@ window.onload = function load() {
                     <li class="btn btn-primary btn-lg">Bootstrap</li>
                     <li class="btn btn-primary btn-lg">Ruby</li>
                 </ul>
-                <button id="button-p5" class="gc-project-button">See Project</button>
+                <button id="button-5" class="gc-project-button">See Project</button>
             </div>
 
             <!-- General Card 5 -->
             <div class="general-card-five">
                 <div class="g-card-image5" id="g-card-imageE"></div>
-                <h3 class="card-heading">Professional Art Printing Data</h3>
+                <h3 class="card-heading">Data Dashboard Healthcare</h3>
                 <p class="card-text-segment">
                     A daily selection of privately personalized reads; no accounts or
                     sign-ups required. Has been the industry's standard.
@@ -211,13 +205,13 @@ window.onload = function load() {
                     <li class="btn btn-primary btn-lg">Bootstrap</li>
                     <li class="btn btn-primary btn-lg">Ruby</li>
                 </ul>
-                <button id="button-p6" class="gc-project-button">See Project</button>
+                <button id="button-6" class="gc-project-button">See Project</button>
             </div>
 
             <!-- General Card 6 -->
             <div class="general-card-six">
                 <div class="g-card-image6" id="g-card-imageF"></div>
-                <h3 class="card-heading">Professional Art Printing Data</h3>
+                <h3 class="card-heading">Website Portfolio</h3>
                 <p class="card-text-segment">
                     A daily selection of privately personalized reads; no accounts or
                     sign-ups required. Has been the industry's standard.
@@ -227,13 +221,13 @@ window.onload = function load() {
                     <li class="btn btn-primary btn-lg">Bootstrap</li>
                     <li class="btn btn-primary btn-lg">Ruby</li>
                 </ul>
-                <button id="button-p7" class="gc-project-button">See Project</button>
+                <button id="button-7" class="gc-project-button">See Project</button>
             </div>
   `;
   projectsSection.appendChild(section);
 
   const seeProjects = [];
-  allProjects.forEach((project, index) => seeProjects.push(document.getElementById(`projects-${index + 1}`)));
+  allProjects.forEach((project, index) => seeProjects.push(document.getElementById(`button-${index + 1}`)));
   let id;
   seeProjects.forEach((el) => {
     el.addEventListener('click', (e) => {
@@ -250,7 +244,7 @@ window.onload = function load() {
   document.querySelector('#close-icon-detail').addEventListener('click', () => {
     document.querySelector('.project-details-popup').classList.toggle('show');
     document.querySelector('#close-icon-detail').classList.toggle('show');
-    if (id === 'button-p1') {
+    if (id === 'button-1') {
       document.getElementById(id).focus();
     } else {
       const section = document.querySelector('#card-section');
