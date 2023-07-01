@@ -5,7 +5,7 @@ contactForm.addEventListener('submit', (event) => {
   const emailValue = emailInput.value;
   const lowercaseEmail = emailValue.toLowerCase();
   if (lowercaseEmail !== emailValue) {
-    document.getElementById('error').innerHTML = '*Email must be in lowercase letters!';
+    document.getElementById('error').innerHTML = 'Email must be in lowercase letters';
     event.preventDefault();
     emailInput.value = '';
     emailInput.focus();
