@@ -542,12 +542,13 @@ ul {
 }
 
 .project-details-inner {
-  margin: auto;
+  /* margin: auto; */
   background-color: #fff;
-  padding: 15px 16px;
+  padding: 15px 16px 15px 15px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 3px 0 black;
+  margin: 0 15px 0 15px;
 }
 
 .project-details-header {
@@ -587,14 +588,15 @@ ul {
   gap: 1rem;
   justify-content: flex-start;
   list-style: none;
-  margin-bottom: 20px;
-  margin-top: 45px;
+  margin-bottom: 30px;
+  margin-top: 35px;
 }
 
 .popup-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: -20px;
 }
 
 .popup-content img {
