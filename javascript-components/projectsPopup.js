@@ -147,10 +147,9 @@ window.onload = function load() {
             <!-- General Card 2 -->
             <div class="general-card-two">
                 <div class="g-card-image2" id="g-card-imageB"></div>
-                <h3 class="card-heading">Data Dashboard Healthcare</h3>
+                <h3 class="card-heading">The Jungle Maniacs</h3>
                 <p class="card-text-segment">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. Has been the industry's standard.
+                  The Jungle Maniacs is a real community of like minded people who loves to explore nature
                 </p>
                 <ul class="card-buttons" id="card-tech-list2">
                     <li class="btn btn-primary btn-lg">HTML</li>
