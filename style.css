@@ -636,6 +636,10 @@ ul {
   margin: 5px 24px 0 24px;
 }
 
+.resume-button-container {
+  text-decoration: none;
+}
+
 .resume-button {
   width: 156px;
   height: 48px;
