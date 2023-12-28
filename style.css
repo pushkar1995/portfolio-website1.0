@@ -849,7 +849,7 @@ ul {
   gap: 1rem;
 }
 
-.footer-bottom {
+/* .footer-bottom {
   width: 8.3rem;
   height: 0.3rem;
   margin-bottom: 0.8rem;
@@ -858,7 +858,7 @@ ul {
   background-color: #0d151e;
   border: 0.01rem solid;
   border-radius: 1.5rem;
-}
+} */
 
 /* Media Queries for Desktop Version */
 
